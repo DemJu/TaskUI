@@ -160,6 +160,12 @@ public class MyStoreSteps {
         }
     }
 
+    @Then("^I have updated the tab$")
+    public void newTab() {
+        driver.switchTo().window(driver.getWindowHandle()); // switch back to main screen
+        driver.get(MyStorePage.getBASE_URL());
+    }
+
     @After
     public void closeDriver() {
         Selenide.sleep(5000);

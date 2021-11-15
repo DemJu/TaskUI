@@ -4,9 +4,9 @@ public class ErrorSiteProcessing {
 
     public static String basketNotEmpty(Integer count) throws CheckingSiteResults {
         if (count > 0) {
-            return "The product has been added to the cart";
+            return "The product exists in the cart";
         } else {
-            throw new CheckingSiteResults("The product has not been added to the cart");
+            throw new CheckingSiteResults("The product is not in the cart");
         }
     }
 

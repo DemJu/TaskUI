@@ -15,7 +15,7 @@ public class MyStorePage {
     private final SelenideElement buttonBasket = $(By.cssSelector("a[title='View my shopping cart']"));
     private final SelenideElement searchInputElements = $(By.cssSelector("input[name='search_query']"));
     private final SelenideElement searchButton = $(By.cssSelector("button[name='submit_search']"));
-    private final SelenideElement foundProduct = $(By.cssSelector("img[title='Faded Short Sleeve T-shirts']"));
+    private final SelenideElement foundProduct = $(By.cssSelector("img[class='replace-2x img-responsive']"));
     private final SelenideElement purchaseButton = $(By.cssSelector("button[name='Submit'] span"));
     private final SelenideElement buttonCloseOrderWindow = $(By.cssSelector("span[title='Close window']"));
     private final SelenideElement contentsBasket = $(By.cssSelector("a[title='View my shopping cart'] span"));
